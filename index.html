@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <title>Nobel</title>
+    <link href="https://fonts.googleapis.com/css?family=Lucida+Sans" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h1>Campaing XYZ</h1>
+    <form>        
+        <div class="grid-container">
+            <div class="grid-item"><label>First Name : <input type="text" id="firstName" onchange="persist(this)" /></label></div>
+            <div class="grid-item"><label>Last Name : <input type="text" id="lastName" onchange="persist(this)"/></div>
+            <div class="grid-item"><label>City : <input type="text" id="city" onchange="persist(this)"/></div>  
+            <div class="grid-item"><label>State : <input type="text" id="state" onchange="persist(this)"/></label></div>
+            <div class="grid-item"><label>Zip : <input type="text"id="zip" onchange="persist(this)"/></label></div>
+            <div class="grid-item"><label>Company : <input type="text" id="company" onchange="persist(this)"/></div>             
+        </div>       
+        <p>
+            <h3>Intro</h3>
+        </p>         
+        <div id="script">Agent: Hello, [CustomerName]! This is [Your Name] from [Company]. How are you today?<br/>
+            Agent: We're launching a brand-new campaign called [Campaign Name], and we believe it's tailor-made for customers like you! based on customer history or preferences, 
+                    and located in the city of [City].
+        </div>
+        <br/>
+    </form>
+    <br>
+    <div class="container">        
+        <table> 
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Type</th>
+                <th>Topics</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+                <!-- Data will be rendered here -->
+            </tbody>
+          </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
